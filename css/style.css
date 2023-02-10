@@ -78,3 +78,80 @@ html {
 }
 
 /* Servicos */
+.service-container { /* container que engloba esta seccao */
+  max-width: 1200px; /* largura max total da tela */
+  padding: 30px 10%;
+  padding-bottom: 0;
+}
+
+.service-box {
+  width: 100%;
+  position: relative;
+  clear: both; /* porque parte do titulo tem float com isso nao permite atravessar um no outro por causa do float*/
+  height: 150px;
+  margin-bottom: 30px; /* para descolar um service do outro */
+}
+
+.service-box:last { /* ultimo service */
+  margin-bottom: 0; /* nao temos margin-bottom para nao distanciar muito da proxima seccao */
+}
+
+.service-title {
+  width: 20%;
+  height: 150px;
+  background-color: #DDD;
+  float: left;
+  text-align: center;
+  line-height: 150px; /* para alinhar verticalmente o texto de servico deste box */
+  padding: 20px; /* para descolar dos cantos */
+  box-sizing: border-box; /* nao deixo que o texto saia do service-box, ou seja, textos maiores eles vao quebrar linha */
+}
+
+.service-title p {
+  padding-top: 35px;
+  color: #FFF;
+  font-size: 18px;
+  line-height: 24px; /* correcao para ficar correto menor que o aplicado na line-height do service-title */
+}
+
+.service-description {
+  width: 80%; /* ja o que service-title ja tem 20% e com isso completam 100% */
+  float: left;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.service-description h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.service-description p {
+  font-size: 14px;
+  line-height: 22px; /* para o texto nao ficar muito colado como apresenta no reset.css */
+}
+
+#gerenciamento-title {
+  color: #2364AA;
+}
+
+#dev-title {
+  color: #3DA5D9;
+}
+
+#design-title {
+  color: #72BFB8;
+}
+
+#gerenciamento-box {
+  background-color: #2364AA;
+}
+
+#dev-box {
+  background-color: #3DA5D9;
+}
+
+#design-box {
+  background-color: #72BFB8;
+}
