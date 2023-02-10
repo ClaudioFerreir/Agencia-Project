@@ -1,3 +1,80 @@
-h1 {
-  color: red;
+/* general */
+html {
+  font-family: Helvetica, sans-serif, sans-serif !important; /* font para todo o site */
 }
+
+/* header */
+.banner {
+  width: 100%; /* para preencher 100% da largura da pagina */
+  height: 600px; /* altura do banner */
+  background-image: url('../img/capa2.jpg'); /* fazemos esta tecnica para a imagem estar se comportando igual em varios monitores e uma tag de imagem é sempre redimensionada quando fechamos e abrimos a tela*/
+  background-position: center; /* deixar o banner sempre centralizado na tela */
+  position: relative; /* para posicionarmos items aqui dentro deste espaco e em relacao a ele */
+}
+
+.box-container {
+  width: 400px;
+  height: 200px;
+  text-align: center;
+  position: absolute; /* para podermos mexer nele com relacao ao banner */
+  right: 100px; /* com relacao ao banner */
+  bottom: 250px; /* com relacao ao banner */
+}
+
+.box-background { /* feito em separado para que seja somente ele com as propriedades de transparencia e nao o texto que sera aplicado sobre ele */
+  width: 100%; /* da largura do box-container */
+  height: 100%; /* da altura do box-container */
+  background-color: #000; /* cor do fundo */
+  opacity: .8; /* transparencia aplicada */
+  position: relative; /* para servir de fundo para os elementos a seguir */
+}
+
+.box-banner-title {
+  position: absolute; /* relacao ao item anterior */
+  width: 100%; /* largura 100% do anterior */
+  text-align: center; /* texto alinhado ao centro */
+  top: 0; /* altura 0 com relacao ao topo do item anterior */
+  color: #FFF; /* cor da fonte do titulo */
+  padding-top: 65px; /* espacar o titulo do topo */
+}
+
+.box-banner-title h1 { /* dar css ao h1 que foi perdido com o reset */
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+.box-banner-title p { /* dar css ao p que foi perdido com o reset */
+  font-size: 20px;
+}
+
+.company-info-container {
+  position: absolute; /* posicao com relacao ao elemento pai */
+  bottom: 0; /* situado ao nivel inferior do elemento pai */
+  width: 100%; /* ocupa toda a largura do elemento pai */
+  height: 175px; /* altura do elemento */
+}
+
+.company-info-background { /* config do fundo do company-info-container */
+  width: 100%; /* da largura do pai */
+  height: 100%; /* da altura do pai */
+  background-color: #DDD; /* cor do fundo */
+  opacity: .9; /* transparencia aplicada */
+}
+
+.company-info-titlebox {
+  position: absolute; /* pq vai ter que se movimentar no mesmo sentido do company-info-container */
+  padding-left: 10%; /* afastamento interno do conteudo da borda esquerda*/
+  top: 40px; /* separar do topo */
+  width: 500px; /* largura do texto */
+}
+
+.company-info-titlebox h2, .company-info-titlebox p {
+  color: #222;
+}
+
+.company-info-titlebox h2 {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+/* Servicos */
