@@ -195,3 +195,69 @@ html {
   color: #888;
   text-align: left; /* texto alinhado a esquerda */
 }
+
+/* footer */
+footer { /* necessario o  */
+  clear: both; /* para o float nao influenciar nos outros elementos */
+  max-width: 1200px;
+  height: 500px;
+  padding: 30px 10%;
+  position: relative; /* para poder mexer os elementos dentro dele*/
+}
+
+.form-container {
+  width: 65%; /* ocupa 65% da tela */
+  height: 375px;
+  position: relative; /* para poder o form-background entender onde ira ser as suas dimensoes de altura e largura*/
+  display: block;
+}
+
+.form-background {
+  width: 100%;
+  height: 100%;
+  background-color: #FFF;
+  opacity: 0.5;
+}
+
+.form-container form {
+  position: absolute; /* para mover os itens dentro da div pai com o position relative, neste caso o form-container */
+  top: 30px;
+  left: 30px;
+  height: 300px;
+}
+
+.form-container input, .form-container textarea {
+  /* vamos agora estilizar os inputs */
+  width: 400px; /* todos inputs tem esta largura */
+  display: block;
+  border: none;
+  padding: 10px;
+  margin-bottom: 15px; /* para descolar do item abaixo */
+  border-bottom: 1px solid #AAA;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.form-container textarea {
+  height: 120px;
+}
+.form-container input::placeholder, .form-container textarea::placeholder {
+  font-size: 14px;
+}
+
+.form-container .submit {
+  background-color: #222;
+  color: #FFF;
+  border: 1px solid transparent;
+  width: 100px;
+  position: relative;
+  float: right; /* posicionamento a direita */
+  cursor: pointer;
+  transition: .5s;
+}
+
+.form-container .submit:hover {
+  background-color: #FFF;
+  color: #222;
+  border: 1px solid #222;
+}
