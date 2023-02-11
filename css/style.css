@@ -261,3 +261,17 @@ footer { /* necessario o  */
   color: #222;
   border: 1px solid #222;
 }
+
+.copyright {
+  color: #222;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  /* com as funcoes abaixo 'fixamos' o texto no centro da tela */
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
