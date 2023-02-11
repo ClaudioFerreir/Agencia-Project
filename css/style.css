@@ -155,3 +155,43 @@ html {
 #design-box {
   background-color: #72BFB8;
 }
+
+/* Sobre a empresa */
+.footer-container {
+  background-image: url('../img/rodape.jpg'); /* inserimos o segundo banner */
+  background-position: center; /* centralizamos a imagem */
+}
+
+.about-container {
+  max-width: 1200px; /* convencao muito utilizada porque se vc pega um entorno muito grande a tela, os elementos ficam muito espacados como no 100%. Entao definimos uma largura para o meio do site para manter uma integridade do layout para qualquer monitor, mais grandes e mais pequenos*/
+  padding: 30px 10%;
+  position: relative;
+  clear: both; /* pq iremos usar o float */
+}
+
+.about-card {
+  float: left;
+  width: 30%; /* 30% da largura maxima para cada card (total 90%) e os outros 10% serao do espacamento do card do meio sendo 5% para cada lado */
+  padding: 30px;
+  background-color: #FFF;
+  text-align: center;
+  box-sizing: border-box; /* para nao fugir o texto da div porque ela tem float*/
+}
+
+.middle-card {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.about-card i {
+  font-size: 50px;
+  color: #AAA;
+}
+
+.about-card p {
+  margin-top: 50px;
+  font-size: 14px;
+  line-height: 22px; /* para descolar uma linha da outra */
+  color: #888;
+  text-align: left; /* texto alinhado a esquerda */
+}
